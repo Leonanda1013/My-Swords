@@ -1,0 +1,19 @@
+/*Universal Selector*/
+*{
+    font-family: Cambria;
+}
+
+/*type selector*/
+h1{
+    font-size: 40px;
+    
+}
+
+/*class selector*/
+.artikel{
+    font-size: 30px;
+}
+
+.penulis{
+    font-size: 20px;
+}

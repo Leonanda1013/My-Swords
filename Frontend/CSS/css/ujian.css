@@ -1,0 +1,25 @@
+*{
+    font-family: Arial;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+.table-head{
+    background-color: darkseagreen ;
+}
+
+table {
+    width: 100%; /* Set the table width to 100% or adjust as needed */
+    table-layout: fixed; /* Set table layout to fixed */
+  }
+  
+  th, td {
+    border: 1px solid #ccc; /* Optional: Add borders to cells for better visualization */
+    text-align: center; /* Optional: Center-align cell content */
+    padding: 8px; /* Optional: Add padding to cells for better spacing */
+    width: 33.33%; /* Set the width of each column equally (3 columns in this example) */
+  }
+  
