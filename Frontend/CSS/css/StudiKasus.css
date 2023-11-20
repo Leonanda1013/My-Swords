@@ -1,0 +1,22 @@
+*{
+    font-family: Arial;
+}
+
+.header{
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 10px;
+    justify-content: center;
+}
+
+.header-title{
+    color: cornsilk;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header:hover{
+    background-color: aquamarine;
+}
+
