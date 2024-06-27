@@ -1,0 +1,14 @@
+.text {
+    color: rgb(0, 188, 0);
+}
+
+.Cart {
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 30px;
+    width: 110px;
+    border-radius: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+
+}
