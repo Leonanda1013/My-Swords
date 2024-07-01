@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Papper Scissors</title>
+</head>
+
+<body>
+    <p>Rock, Papper, Scissors</p>
+    <button onclick="
+        computerMove();
+        playGame('rock', computerMove());
+        scoring();
+        alert (playGame('rock', computerMove()),
+        console.log(score)    
+    );
+    ">Rock</button>
+    <button onclick="
+        computerMove();
+        playGame('papper', computerMove());
+        scoring();
+        alert (
+            playGame('papper', computerMove()),
+            console.log(score)
+        );
+    ">Papper</button>
+    <button onclick="
+        computerMove(); 
+        playGame('scissors', computerMove());
+        scoring();
+        alert (
+            playGame('scissors', computerMove()),
+            console.log(score)
+
+        );
+        
+        ">Scissors</button>
+
+    <button onclick="resetScore()">Reset Score</button>
+
+    <script>
+        const score = {
+            wins: 0,
+            losses: 0,
+            ties: 0
+        }
+        let userMove = '';
+        function playGame(userMove, computerMove) {
+            let result = '';
+            if (userMove === computerMove) {
+                return result === 'Tie';
+            } else if (userMove === 'rock' && computerMove === 'scissors') {
+                return result === 'You win';
+            } else if (userMove === 'papper' && computerMove === 'rock') {
+                return result = 'You win';
+            } else if (userMove === 'scissors' && computerMove === 'papper') {
+                return result === 'You win';
+            } else {
+                return result === 'You lose';
+            }
+        }
+
+        function computerMove() {
+
+            const randomNumber = Math.random();
+            if (randomNumber < 0.34) {
+                return 'rock';
+            } else if (randomNumber <= 0.67) {
+                return 'papper';
+            } else {
+                return 'scissors';
+            }
+        }
+
+        function scoring(result) {
+            if (result === 'You win') {
+                score.wins++;
+            } else if (result === 'You lose') {
+                score.losses++;
+            } else {
+                score.ties++;
+            }
+        }
+
+        function resetScore() {
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+        }
+
+    </script>
+</body>
+
+</html>
