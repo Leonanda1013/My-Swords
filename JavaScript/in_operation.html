@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>in Operation</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Alice",
+        age: 30,
+        city: "New York",
+      };
+
+      console.log("name" in person); // true
+      console.log("age" in person); // true
+      console.log("country" in person); // false
+
+      const numbers = [10, 20, 30];
+
+      console.log(0 in numbers); // true
+      console.log(2 in numbers); // true
+      console.log(3 in numbers); // false
+
+      if ("city" in person) {
+        alert(`City is present: ${person.city}`);
+      } else {
+        alert("City is not present");
+      }
+    </script>
+  </body>
+</html>
