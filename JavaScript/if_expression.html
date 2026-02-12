@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IF Expression</title>
+  </head>
+  <body>
+    <script>
+      let nilai = 80;
+      let hasil = nilai >= 75 ? "Lulus" : "Tidak Lulus";
+      document.writeln("Nilai: " + nilai);
+      document.writeln("</br>");
+      document.writeln("Hasil: " + hasil);
+
+      if (nilai >= 90) {
+        document.writeln("</br>");
+        document.writeln("Grade: A");
+      } else if (nilai >= 80) {
+        document.writeln("</br>");
+        document.writeln("Grade: B");
+      } else if (nilai >= 70) {
+        document.writeln("</br>");
+        document.writeln("Grade: C");
+      } else if (nilai >= 60) {
+        document.writeln("</br>");
+        document.writeln("Grade: D");
+      } else {
+        document.writeln("</br>");
+        document.writeln("Grade: E");
+      }
+    </script>
+  </body>
+</html>
