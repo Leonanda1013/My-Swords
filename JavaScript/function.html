@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function greet(name) {
+        return "Hello, " + name + "!";
+      }
+      document.writeln(greet("Vincentius"));
+
+      // Optional & Default Parameters
+      function greetWithOptional(name, greeting = "Hello") {
+        return greeting + ", " + name + "!";
+      }
+      document.writeln(greetWithOptional("Vincentius"));
+      document.writeln(greetWithOptional("Vincentius", "Good morning"));
+      document.writeln("</br>");
+      //Rest Function
+
+      function sum(...numbers) {
+        let total = 0;
+        for (let i = 0; i < numbers.length; i++) {
+          total += numbers[i];
+        }
+        return total;
+      }
+      document.writeln(sum(1, 2, 3, 4, 5));
+
+      var value = [1, 2, 3];
+      document.writeln("</br>");
+      document.writeln("Sum of array values: " + sum(...value));
+    </script>
+  </body>
+</html>
