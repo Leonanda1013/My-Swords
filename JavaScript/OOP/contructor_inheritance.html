@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Employee(firstname) {
+        this.firstname = firstname;
+        this.sayhello = function (name) {
+          console.log(`Hello ${name}, my name is ${this.firstname}`);
+        };
+      }
+      function Manager(firstname, lastname) {
+        this.lastname = lastname;
+        Employee.call(this, firstname);
+      }
+
+      const eko = new Manager("Eko", "Khannedy");
+      console.log(eko);
+    </script>
+  </body>
+</html>
