@@ -25,6 +25,20 @@
 
       const tio = new Orang("Tio");
       console.info(tio);
+
+      //class method
+      class Hewan {
+        constructor(name) {
+          this.animal = name;
+        }
+
+        sayHello(name) {
+          console.info(`Hello ${name}, i love ${this.animal}`);
+        }
+      }
+
+      const kucing = new Hewan("Kucing");
+      kucing.sayHello("Tio");
     </script>
   </body>
 </html>
