@@ -1,7 +1,11 @@
-function DoSomething(){
+function DoSomething() {}
 
-}
+const DoSomething = () => {};
 
-const DoSomething = () => {
-    
-}
+// ternary operation
+
+let suka = mood === "happy" ? "I am happy" : "I am sad";
+
+//  map filter
+
+
