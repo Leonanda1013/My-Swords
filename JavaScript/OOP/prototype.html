@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+  </head>
+  <body>
+    <script>
+      // satu persatu
+      const eko = {
+        nama_depan: "Eko",
+        nama_belakang: "Khannedy",
+      };
+
+      const budi = {
+        nama_depan: "Budi",
+        nama_belakang: "Santoso",
+      };
+
+      // Javascipt versi lama
+      function Person(firstName, lastName) {
+        // constructor function best practice menggunakan huruf kapital
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.hello = function (name) {
+          console.log(`Hello ${name}, my name is ${this.firstName} ${this.lastName}`);
+        };
+      }
+
+      Person.prototype.run = function () {
+        console.info(`${this.firstName} is Running`);
+      };
+      const tio = new Person("Vincentius", "Leonanda");
+      tio.sayByee = function () {
+        console.info(`Good bye ${this.firstName} ${this.lastName}`);
+      };
+      const fidel = new Person("Fidel", "Putri");
+      fidel.run();
+      console.log(tio);
+      console.log(fidel);
+    </script>
+  </body>
+</html>
