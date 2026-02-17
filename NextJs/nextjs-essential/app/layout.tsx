@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css"; // untuk import global styles / globals.css
+import Link from "next/link"; // untuk link tanpa reload
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="border-b border-white">Logo</header>
+        <header className="border-b border-white">
+          Logo
+          <nav>
+            <a href="./">Home</a>
+            <a href="/about">About</a>
+            <a href="/about/team">Team</a>
+
+            {/* link tanpa reload */}
+            <Link href="./">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/about/team">Team</Link>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
