@@ -23,15 +23,20 @@
         // constructor function best practice menggunakan huruf kapital
         this.firstName = "";
         this.lastName = "";
+        this.hello = function (name) {
+          console.log(`Hello ${name}, my name is ${this.firstName} ${this.lastName}`);
+        };
       }
 
       const tio = new Person();
       tio.firstName = "Vincentius";
       tio.lastName = "Leonanda";
+      tio.hello("fidel");
 
       const fidel = new Person();
       fidel.firstName = "Fidel";
       fidel.lastName = "Putri";
+      fidel.hello("tio");
 
       console.log(tio);
       console.log(fidel);
