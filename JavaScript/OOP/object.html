@@ -19,23 +19,19 @@
       };
 
       // Javascipt versi lama
-      function Person() {
+      function Person(firstName, lastName) {
         // constructor function best practice menggunakan huruf kapital
-        this.firstName = "";
-        this.lastName = "";
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.hello = function (name) {
           console.log(`Hello ${name}, my name is ${this.firstName} ${this.lastName}`);
         };
       }
 
-      const tio = new Person();
-      tio.firstName = "Vincentius";
-      tio.lastName = "Leonanda";
+      const tio = new Person("Vincentius", "Leonanda");
       tio.hello("fidel");
 
-      const fidel = new Person();
-      fidel.firstName = "Fidel";
-      fidel.lastName = "Putri";
+      const fidel = new Person("Fidel", "Putri");
       fidel.hello("tio");
 
       console.log(tio);
