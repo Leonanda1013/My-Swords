@@ -1,29 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // satu persatu
-        const eko = {
-            nama_depan : "Eko",
-            nama_belakang : "Khannedy"
-        }
+      // satu persatu
+      const eko = {
+        nama_depan: "Eko",
+        nama_belakang: "Khannedy",
+      };
 
-        const budi = {
-            nama_depan : "Budi",
-            nama_belakang : "Santoso"
-        }
+      const budi = {
+        nama_depan: "Budi",
+        nama_belakang: "Santoso",
+      };
 
-        // Javascipt versi lama
-        function Person(){ // constructor function best practice menggunakan huruf kapital          
-        }
+      // Javascipt versi lama
+      function Person() {
+        // constructor function best practice menggunakan huruf kapital
+        this.firstName = "";
+        this.lastName = "";
+      }
 
-        const tio = new Person();
-        const fidel = new Person();
+      const tio = new Person();
+      tio.firstName = "Vincentius";
+      tio.lastName = "Leonanda";
+
+      const fidel = new Person();
+      fidel.firstName = "Fidel";
+      fidel.lastName = "Putri";
+
+      console.log(tio);
+      console.log(fidel);
     </script>
-</body>
+  </body>
 </html>
